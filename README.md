@@ -11,7 +11,7 @@ Game by  **Niklaus Houska**, **Alain Hostettler**, **Christian Scherer** and **M
 * [About](#about)
 * [Game Description](#game-description)
 * [Content](#content)
-  * [Units](#units)
+  * [Fighters](#fighters)
   * [Animals](#animals)
   * [Cheering System](#cheering-system)
   * [Fame and Upgrades](#fame-and-upgrades)
@@ -42,17 +42,23 @@ This page contains information and executables for the Circus Maximus game relea
 | Development time  | ~3 months    |
 | Framework | [Monogame](https://www.monogame.net/) |
 
+## Game Description
+Circus Maximus is a competitive multiplayer real-time strategy game for 2 players in pseudo-3D. Each player starts by assembling an army consisting of up to 5 groups with fighters of various categories. The goal is to crush the opponent’s army in the following battle. During combat, new fighters, upgrades and animals can be bought with a currency called cheering points, earned by the audience’s approval.
 
 #### Trailer
 [![Trailer](https://img.youtube.com/vi/SOApJrn-orY/0.jpg)](https://www.youtube.com/watch?v=SOApJrn-orY)
 
-
-## Game Description
-Circus Maximus is a competitive multiplayer real-time strategy game for 2 players in pseudo-3D. Each player starts by assembling an army consisting of up to 5 groups with fighters of various categories. The goal is to crush the opponent’s army in the following battle. During combat, new fighters, upgrades and animals can be bought with a currency called cheering points, earned by the audience’s approval.
-
 ## Content
 
-### Units
+### Fighters
+<div align="center">
+<img src="assets/gifs/units_cheering.gif" alt="Units" width="100%"/>
+</div>
+
+The game features 8 unique fighters inspired by historic gladiator classes. Other fighters differ in attack, defense, HP, range, movement and attack speed, as well as in unique capabilities and upgrades. 
+
+#### Formations
+Fighters are organised in groups of which a player can control up to 5 at the same time.
 
 
 ## Technical Achievements
