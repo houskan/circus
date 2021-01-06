@@ -5,7 +5,7 @@
 <img src="assets/Artwork/Arena.png" alt="Arena" width="100%"/>
 </div>
 
-by  **Niklaus Houska**, **Alain Hostettler**, **Christian Scherer** and **Maximilian Wolfertz** 
+Game by  **Niklaus Houska**, **Alain Hostettler**, **Christian Scherer** and **Maximilian Wolfertz** 
 
 ## Table of Contents
 * [About](#about)
@@ -33,6 +33,7 @@ This page contains information and executables for the Circus Maximus game relea
 
 | Information |  |
 | ---:         |          :----- |
+| Developers | **Niklaus Houska**: Game mechanics, Code, 3D Artwork  <br> **Alain Hostettler**: Code Lead, UI <br> **Christian Scherer**: Code, Sound effects, Controls <br> **Maximilian Wolfertz**: Graphics, 2D Artwork |
 | Platforms | Xbox, Windows |
 | Release Date | May 26, 2020 |
 | Genre | Real-time strategy |
@@ -42,18 +43,16 @@ This page contains information and executables for the Circus Maximus game relea
 | Framework | [Monogame](https://www.monogame.net/) |
 
 
-
-
-
-
-
 #### Trailer
 [![Trailer](https://img.youtube.com/vi/SOApJrn-orY/0.jpg)](https://www.youtube.com/watch?v=SOApJrn-orY)
 
 
 ## Game Description
-
+Circus Maximus is a competitive multiplayer real-time strategy game for 2 players in pseudo-3D. Each player starts by assembling an army consisting of up to 5 groups with fighters of various categories. The goal is to crush the opponent’s army in the following battle. During combat, new fighters, upgrades and animals can be bought with a currency called cheering points, earned by the audience’s approval.
 
 ## Content
+
+### Units
+
 
 ## Technical Achievements
