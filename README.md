@@ -29,7 +29,7 @@ Game by  **Niklaus Houska**, **Alain Hostettler**, **Christian Scherer** and **M
     * [Pathing](#pathing)
 
 ## About
-This page contains information and executables for the Circus Maximus game released for the [Game Programming Laboratory 2020](https://gtc.inf.ethz.ch/education/game-programming-laboratory/previous-years/2020.html) at ETH Zurich.
+This page contains information and executables for the Circus Maximus game released for the [Game Programming Laboratory 2020](https://gtc.inf.ethz.ch/education/game-programming-laboratory/previous-years/2020.html) at ETH Zurich. The game won the Audience Choice Award.
 
 | Information |  |
 | ---:         |          :----- |
@@ -55,10 +55,52 @@ Circus Maximus is a competitive multiplayer real-time strategy game for 2 player
 <img src="assets/gifs/units_cheering.gif" alt="Units" width="100%"/>
 </div>
 
-The game features 8 unique fighters inspired by historic gladiator classes. Other fighters differ in attack, defense, HP, range, movement and attack speed, as well as in unique capabilities and upgrades. 
+The game features 8 unique fighters inspired by historic gladiator classes. Other fighters differ in attack, defense, HP, range, cost, movement and attack speed, as well as in unique capabilities and upgrades. 
 
 #### Formations
-Fighters are organised in groups of which a player can control up to 5 at the same time.
+<div align="center">
+<img src="assets/gifs/murmillo_formation.gif" alt="Murmillo Formation" width="49%"/>
+ <img src="assets/gifs/hoplomachus_formation.gif" alt="Hoplomachus Formation" width="49%"/>
+</div>
+Fighters are organised in groups of which a player can control up to 5 at the same time. Each group can be put in offensive, defensive or retreat stance which influences the fighters default behaviour. Depending on class, the defensive stance buffs defense stats on cost of movement speed. 
+
+#### Let's Introduce our Fighters
+
+<div align="center">
+<img src="assets/Artwork/Murmillo.png" alt="Murmillo" width="24%"/>
+ <img src="assets/Artwork/Hoplomachus.png" alt="Hoplomachus" width="24%"/>
+ <img src="assets/Artwork/Sagittarius.png" alt="Sagittarius" width="24%"/>
+ <img src="assets/Artwork/Eques.png" alt="Eques" width="24%"/>
+</div>
+
+**Murmillo**: An elite gladiator, excelling both in offense and defense! His speciality is a impenetrable Testudo formation.
+
+**Hoplomachus**: Hoplomachi are mobile spearmen, that form a phalanx to repulse cavalry!
+
+**Sagittarius**: Skillfull archers, raining hell on any enemy from distance!
+
+**Eques** Fast and formidable fighters on horseback! Equites engage the enemy with a powerful charge attack. 
+
+<div align="center">
+<img src="assets/Artwork/Veles.png" alt="Veles" width="24%"/>
+ <img src="assets/Artwork/Retiarius.png" alt="Retiarius" width="24%"/>
+ <img src="assets/Artwork/Provocator.png" alt="Provocator" width="24%"/>
+ <img src="assets/Artwork/Bestiarus.png" alt="Bestiarius" width="24%"/>
+</div>
+
+**Veles**: Disposable and swift - these skirmishers effectively counter archers and the unportected!
+
+**Retiarius**: Retiarii entrap enemies with their nets leaving them incapacitated and vulnerable to attacks. 
+
+**Provocator**: Always an audience favorite, these fighters trade attack for suvivability and know how to get the crowd going. 
+
+**Bestiarius**: Light footed and fearless. Bestiarii excel in dominating the wild beast of the arena!
+
+### Animals
+<div align="center">
+<img src="assets/gifs/lion_demo.gif" alt="Lion Demo" width="49%"/>
+ <img src="assets/gifs/rhino_demo.gif" alt="Rhno Demo" width="49%"/>
+</div>
 
 
 ## Technical Achievements
