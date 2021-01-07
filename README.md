@@ -10,6 +10,7 @@ Game by  **Niklaus Houska**, **Alain Hostettler**, **Christian Scherer** and **M
 ## Table of Contents
 * [About](#about)
 * [Game Description](#game-description)
+* [Installation](#installation-windows)
 * [Content](#content)
   * [Fighters](#fighters)
   * [Animals](#animals)
@@ -30,6 +31,7 @@ This page contains information and executables for the Circus Maximus game relea
 | Player Count | 2 |
 | Playtime per Match | 10-30 minutes |
 | Development time  | ~3 months    |
+| Input | Xbox Controller, (Keyboard for Player 1) |
 | Framework | [Monogame](https://www.monogame.net/) |
 
 ## Game Description
@@ -37,6 +39,14 @@ Circus Maximus is a competitive multiplayer real-time strategy game for 2 player
 
 #### Trailer
 [![Trailer](https://img.youtube.com/vi/SOApJrn-orY/0.jpg)](https://www.youtube.com/watch?v=SOApJrn-orY)
+
+## Installation (Windows)
+  1. Download Release.zip and unpack
+  2. Right-click on CMGame_1.0.37.0_x64.cer -> install
+  3. Select Local Machine (Requires Admin rights, Current User does not work)
+  4. Select "Place all certificates in the following store" and browse to "Trusted Root Certification Authorities"
+  5. Finish
+  6. Install the game by double-clicking CMGame_1.0.37.0_x64.appxbundle
 
 ## Content
 
