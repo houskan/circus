@@ -14,19 +14,9 @@ Game by  **Niklaus Houska**, **Alain Hostettler**, **Christian Scherer** and **M
   * [Fighters](#fighters)
   * [Animals](#animals)
   * [Cheering System](#cheering-system)
-  * [Fame and Upgrades](#fame-and-upgrades)
-  * [Map](#map)
-  * [Sound Effects and Music](sound-effects-and-music)
-  * [2D Art](#2d-art)
+  * [Reputation and Upgrades](#reputation-and-upgrades)
+  * [Music](sound-effects-and-music)
 * [Technical Achievements](#technical-achievements)
-  * [UI](#ui)
-  * [Pseudo 2D](#pseudo-2d)
-    * [Render Pipeline](#render-pipeline)
-    * [Depth](#depth)
-  * [Navigation](#navigation)
-    * [Group Movement](group-movement)
-    * [Collision](#collision)
-    * [Pathing](#pathing)
 
 ## About
 This page contains information and executables for the Circus Maximus game released for the [Game Programming Laboratory 2020](https://gtc.inf.ethz.ch/education/game-programming-laboratory/previous-years/2020.html) at ETH Zurich. The game won the Audience Choice Award.
@@ -73,13 +63,14 @@ Fighters are organised in groups of which a player can control up to 5 at the sa
  <img src="assets/Artwork/Eques.png" alt="Eques" width="24%"/>
 </div>
 
-**Murmillo**: An elite gladiator, excelling both in offense and defense! His speciality is a impenetrable Testudo formation.
+**Murmillo**: An elite gladiator, that froms a slow but tanky Testudo formation in defensive stance. 
 
-**Hoplomachus**: Hoplomachi are mobile spearmen, that form a phalanx to repulse cavalry!
+**Hoplomachus**: A spearman with attack bonus against mounted fighters. Forms a tight Phalanx formation in defensive stance that can counter the charge of *Equites*. 
 
-**Sagittarius**: Skillfull archers, raining hell on any enemy from distance!
+**Sagittarius**: An archer with high attack from distance, but low defense. 
 
-**Eques** Fast and formidable fighters on horseback! Equites engage the enemy with a powerful charge attack. 
+**Eques**: Strong and expensive cavalry that can charge into enemy formations. 
+
 
 <div align="center">
 <img src="assets/Artwork/Veles.png" alt="Veles" width="24%"/>
@@ -88,13 +79,13 @@ Fighters are organised in groups of which a player can control up to 5 at the sa
  <img src="assets/Artwork/Bestiarus.png" alt="Bestiarius" width="24%"/>
 </div>
 
-**Veles**: Disposable and swift - these skirmishers effectively counter archers and the unportected!
+**Veles**: A cheap skirmisher that throws spears. Effectively counters the *Sagittarius*. 
 
-**Retiarius**: Retiarii entrap enemies with their nets leaving them incapacitated and vulnerable to attacks. 
+**Retiarius**: *Retiarii* have the ability to momentarily incapacitate opponents with their net and ignore armour of entrapped enemies. They excel against elite fighters such as the  *Murmillo*, *Eques* and *Provocator*.  
 
-**Provocator**: Always an audience favorite, these fighters trade attack for suvivability and know how to get the crowd going. 
+**Provocator**: Trades attack for suvivability and knows how to get the crowd going. Highest defensive values and gains extra cheering points.
 
-**Bestiarius**: Light footed and fearless. Bestiarii excel in dominating the wild beast of the arena!
+**Bestiarius**: Bestiarii specialize in fighting the animals of the arena, but are weak against other fighters.
 
 ### Animals
 <div align="center">
@@ -102,5 +93,39 @@ Fighters are organised in groups of which a player can control up to 5 at the sa
  <img src="assets/gifs/rhino_demo.gif" alt="Rhno Demo" width="49%"/>
 </div>
 
+Lions and Rhinoceros spawn regularly in front of the spectators and unexpectetly through trap doors in the middle of the arena. Animals are strong and should only be engaged with *Bestiarii* and never from range, as such cowardice upsets the crowd. Defeating animals yields high cheering points. 
+
+### Cheering System
+<div align="center">
+<img src="assets/gifs/cheering.gif" alt="Cheering" width="80%"/>
+</div>
+
+Cheering points are the game's currency. They are earned by fighting and killing opponents or animals and by entertaining the crowd by posing at regularly appearing "Cheering Hotspots" in the middle of the arena. Cheering points are exchanged for new fighters.  
+Beware, cheering points can be deducted when upsetting the crowd. This happens when your fighters retreat for too long or cowardly attack animals from save distance. 
+
+The crowd loves an underdog! A losing player will benefit from increased cheering gain as a way back into the game should his opponent not capitalize on his advantage. 
+
+### Reputation and Upgrades
+Groups can earn up to 3 stars by killing opponents and animals, signifying their reputation in the arena. Each star allows them to get an upgrade at the location at the bottom of the arena. Upgrades are unique to each fighter class and boosts their strength. More details can be found in the ingame encyclopedia. 
+<div align="center">
+ <img src="assets/gifs/charge.gif" alt="Sprites" width="100%"/>
+</div>
+
+### Music
+Special thanks to Caesar Otterli for the *Circus Maximus Main Theme*.
 
 ## Technical Achievements
+<div align="center">
+ <img src="assets/Artwork/Sprites.png" alt="Sprites" width="100%"/>
+</div>
+
+The game was created using the simple [Monogame](https://www.monogame.net/) framework. Some technical achievements are listed below:
+- **Render pipeline**: All models and animations were created in 3D using [Blender](https://www.blender.org/) and transformed into 2D spritesheets used within the game. For example each fighter and animal has at least a unique stand, walk, attack, die and pose animation recorded at 16 orientations and 2 team colors which accounts for several thousand individual sprites. 
+
+- **Depth rendering**: The order of overlapping sprites is calculated pixel-wise. Each sprite thus has an additional depth channel.
+
+- **UI system**: A full-fledged UI system has been implemented to allow the creation of complex menus and controls.
+
+- **Movement and Collision**: Fighters move smoothly and responsive in formation. Collision avoidance and resolving prevents units from stacking. Units do not get stuck because of collision avoidance. Units effectively spread out when engaging opponents. 
+
+- **Pathing**: Units can autonomously navigate around obstacles.
